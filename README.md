@@ -15,10 +15,21 @@ $ file binary
 #### GDB
 
 ```gdb
-$ info files                    # i files 
-$ break *0x80000000             # b *0x800..
-$ info break                    # i break 
-$ run                           # r 
-$ x/16i $eip                    # extended instruction pointer
-$ info registers                # i r 
+$ info files                    
+$ i files 
+
+$ break *0x80000000             
+$ b *0x80000000
+
+$ info break
+$ i break 
+
+$ run
+$ r
+
+$ # Print 16 instructions from the Extended Instruction Pointer (EIP) address
+$ x/16i $eip
+
+$ info registers                
+$ i r 
 ```
