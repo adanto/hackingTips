@@ -18,6 +18,12 @@ $ file binary
 $ info files                    
 $ i files 
 
+$ set dissasembly-flavor intel
+$ dissasemble main 
+
+$ # Get process memory map
+$ info proc mappings 
+
 $ break *0x80000000             
 $ b *0x80000000
 
