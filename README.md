@@ -32,4 +32,8 @@ $ x/16i $eip
 
 $ info registers                
 $ i r 
+
+$ next 
+$ n
+
 ```
