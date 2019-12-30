@@ -52,4 +52,6 @@ $ i r
 $ next 
 $ n
 
+$ info functions
+
 ```
