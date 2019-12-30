@@ -28,7 +28,7 @@ $ file binary
 $ info files                    
 $ i files 
 
-$ set dissasembly-flavor intel
+$ set disassembly-flavor intel
 $ dissasemble main 
 
 $ # Get process memory map
