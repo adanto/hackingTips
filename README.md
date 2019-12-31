@@ -56,4 +56,11 @@ $ info functions
 
 $ run < input # Use file as input 
 
+$ define hook-stop
+>x/1i $eip
+>x/8wx $esp
+>end
+
+
+
 ```
