@@ -54,4 +54,6 @@ $ n
 
 $ info functions
 
+$ run < input # Use file as input 
+
 ```
