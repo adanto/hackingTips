@@ -1,5 +1,9 @@
 # hackingTips
 
+#### Exploiting techniques
+
+- ret2libc: Call something from libc.o already loaded in memory with execution privileges
+
 #### Online service "on the go":
 
 ```bash
