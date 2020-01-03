@@ -8,6 +8,7 @@
 #### Techniques
 
 - ***GDB***: [GDB Cheatsheet](https://gist.github.com/rkubik/b96c23bd8ed58333de37f2b8cd052c30#file-cheat_sheet-txt)
+- ***objdump***: objdump 
 
 #### Online service "on the go":
 
