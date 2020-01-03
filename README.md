@@ -5,6 +5,10 @@
 - ***ret2libc***: Call something from libc.o already loaded in memory with execution privileges
 - ***formatString***: [formatstring-1.2.pdf](https://crypto.stanford.edu/cs155old/cs155-spring08/papers/formatstring-1.2.pdf)
 
+#### Techniques
+
+- ***GDB***: [GDB Cheatsheet](https://gist.github.com/rkubik/b96c23bd8ed58333de37f2b8cd052c30#file-cheat_sheet-txt)
+
 #### Online service "on the go":
 
 ```bash
