@@ -39,6 +39,8 @@ $ file binary
 #### GDB
 
 ```gdb
+> gdb --args program1 `python -c 'print "A"*64 + "\xef\xbe\xad\xde"'`
+
 $ info files                    
 $ i files 
 
