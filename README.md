@@ -27,6 +27,9 @@ $ (python exploit.py ; cat) | /tmp/exploitable
 
 $ # Send program output as parameter
 $ ./vuln `python -c 'print "A"*64 + "\xef\xbe\xad\xde"'`
+
+$ # Start with empty environment
+$ env -i ./program
 ```
 
 
