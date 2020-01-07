@@ -37,7 +37,10 @@ $ env -i ./program
 #### Checklist bin exploitation 
 
 ```bash
-$ file binary
+$ file vuln
+$ pidof vuln
+$ cat /proc/3626/maps
+$ strace ./vuln
 ```
 
 #### GDB
