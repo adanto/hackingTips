@@ -83,3 +83,7 @@ $ define hook-stop
 
 
 ```
+
+#### References
+
+- ***ASM Cheat Sheet***: [x86-64 Reference Sheet (GNU assembler format)](https://www.systems.ethz.ch/sites/default/files/file/COURSES/2014%20FALL%20COURSES/2014_Fall_SPCA/lectures/x86_64_asm_cheat_sheet.pdf)
