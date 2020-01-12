@@ -5,6 +5,7 @@
 - ***stack overflows***: [Stack layout](https://www.win.tue.nl/~aeb/linux/hh/stack-layout.html)
 - ***ret2libc***: Call something from libc.o already loaded in memory with execution privileges
 - ***formatString***: [formatstring-1.2.pdf](https://crypto.stanford.edu/cs155old/cs155-spring08/papers/formatstring-1.2.pdf)
+- ***heap***: ???
  
 #### Tools
 
