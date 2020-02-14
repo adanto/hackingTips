@@ -7,6 +7,11 @@
 - ***formatString***: [formatstring-1.2.pdf](https://crypto.stanford.edu/cs155old/cs155-spring08/papers/formatstring-1.2.pdf)
 - ***heap***: ???
  
+#### Exploiting utils
+
+- ***boofuzz***: [Boofuzz Python library](https://github.com/jtpereyda/boofuzz)
+- ***immunity debugger***: [official Immunity debugger website](https://www.immunityinc.com/products/debugger/)
+ 
 #### Tools
 
 - ***GDB***: [GDB Cheatsheet](https://gist.github.com/rkubik/b96c23bd8ed58333de37f2b8cd052c30#file-cheat_sheet-txt)
@@ -92,3 +97,5 @@ $ define hook-stop
 #### References
 
 - ***ASM Cheat Sheet***: [x86-64 Reference Sheet (GNU assembler format)](https://www.systems.ethz.ch/sites/default/files/file/COURSES/2014%20FALL%20COURSES/2014_Fall_SPCA/lectures/x86_64_asm_cheat_sheet.pdf)
+
+
