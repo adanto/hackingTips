@@ -17,4 +17,5 @@
 
 ##### Techniques
 
-- ***Blind SQL injection vulnerabilities***
+- ***Out-of-band network interaction***
+- ***Time lapses***
