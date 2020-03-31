@@ -1,8 +1,13 @@
 # Cross-Site scripting 
 
 
-## Reflected XSS, where the malicious script comes from the current HTTP request.
+## Reflected XSS
+The malicious script comes from the current HTTP request.
 
-## Stored XSS, where the malicious script comes from the website's database.
+## Stored XSS
+The malicious script comes from the website's database.
 
-## DOM-based XSS, where the vulnerability exists in client-side code rather than server-side code.
+## DOM-based XSS
+The vulnerability exists in client-side code rather than server-side code.
+
+
