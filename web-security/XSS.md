@@ -7,7 +7,7 @@ The malicious script comes from the current HTTP request.
 ## Stored XSS
 The malicious script comes from the website's database.
 
-'''html
+```html
 </p><script>
 
 window.onload = function exampleFunction() {
@@ -23,7 +23,7 @@ window.onload = function exampleFunction() {
 
 });}</script><p>ScriptHere
 
-'''
+```
 
 
 ## DOM-based XSS
