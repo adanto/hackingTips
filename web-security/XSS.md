@@ -1,6 +1,7 @@
 # Cross-Site scripting 
 
 - ***Cheatsheet***: https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
+- ***XSS Filter Evasion Cheat Sheet***:https://owasp.org/www-community/xss-filter-evasion-cheatsheet
 
 ## Cross-site scripting contexts
 
