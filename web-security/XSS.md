@@ -1,5 +1,6 @@
 # Cross-Site scripting 
 
+- ***Cheatsheet***: https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
 
 ## Reflected XSS
 The malicious script comes from the current HTTP request.
