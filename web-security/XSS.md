@@ -2,6 +2,13 @@
 
 - ***Cheatsheet***: https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
 
+## Cross-site scripting contexts
+
+```html
+<script>alert(document.domain)</script>
+<img src=1 onerror=alert(1)> 
+```
+
 ## Reflected XSS
 The malicious script comes from the current HTTP request.
 
